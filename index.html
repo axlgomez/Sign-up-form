@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="js/main.js" defer></script>
+    <title>Intro component with sign up form</title>
+</head>
+<body>
+
+        <section class="section-code">
+            <h2 class="section-code__title">Learn to code by watching others</h2>
+            <p class="section-code__text">
+                See how experienced developers solve problems inreal-time. Watching scripted tutorials is great, 
+                but understanding how developers think is invaluable. 
+            </p>
+        </section>
+
+    
+        <section class="section-form">
+    
+            <h4 class="section-form__title"> <span class="section-form__free">Try it free 7 days</span> then $20/mo. thereafter</h4>
+    
+            <form novalidate class="section-form__form-group" action="" id="form">
+                <input type="text" name="name" id="name" placeholder="First Name" class="section-form__input section-form__input--name" autofocus>
+                <img class="section-form__icon section-form__icon--name" src="/images/icon-error.svg" alt="">
+                <small id="nombre"></small>
+
+                <input type="text" name="lname" id="lname" placeholder="Last Name" class="section-form__input section-form__input--lname">
+                <img class="section-form__icon section-form__icon--lname" src="/images/icon-error.svg" alt="">
+                <small id="apellido"></small>
+
+                <input type="email" name="email" id="email" placeholder="Email Address" class="section-form__input section-form__input--email">
+                <img class="section-form__icon section-form__icon--email" src="/images/icon-error.svg" alt="">
+                <small id="correo"></small>
+
+                <input type="password" name="password" id="password" placeholder="Password" class="section-form__input section-form__input--password">
+                <img class="section-form__icon section-form__icon--password" src="/images/icon-error.svg" alt="">
+                <small id="contraseña"></small>
+                
+                <button type="submit" class="section-form__button">Claim your free trial </button>
+                <p class="section-form__text">
+                    By clicking the button, you are agreeing to our <span class="section-form__terms">Terms and Services</span>
+                </p>
+            </form>
+            
+        </section>
+
+</body>
+</html>

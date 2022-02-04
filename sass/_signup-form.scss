@@ -1,0 +1,220 @@
+.section-code
+{
+    color: #fff;
+    text-align: center;
+    padding: 4.5em 1.8em 0;
+
+    @include responsive(desktop)
+    {
+        padding: 0 5em;
+        transform: translate(5em, 3.5em);
+    }
+
+    &__title
+    {
+        font-weight: map-get($font-weights, semi-bold);
+        font-size: 27px;
+        
+        @include responsive(desktop)
+        {
+            font-size: 45px;
+            font-weight: map-get($font-weights, bold);
+            text-align: start;
+        }
+    }
+
+    &__text
+    {
+
+        transform: translateY(.6em);
+        line-height: 1.6;
+        color: rgb(241, 241, 241);
+
+        @include responsive(desktop)
+        {
+            text-align: start;
+            transform: translateY(-.5em);
+        }
+    }
+}
+
+.section-form
+{
+    padding: 0 1.8em 5em;
+    transform: translateY(3.4em);
+
+    @include responsive(desktop)
+    {
+        width: 100%;
+        padding: 0 8em;
+        transform: translate(-4em, 2.5em);
+    }
+
+    &__title
+    {
+        background-color: $blue;
+        color: rgb(241, 241, 241);
+        font-weight: map-get($font-weights, regular);
+        text-align: center;
+        font-size: 15px;
+        padding: 1.7em;
+        border-radius: .5em;
+        box-shadow: 0 8px 3px rgba($color: $dark-blue, $alpha: .2);
+
+        @include responsive(desktop)
+        {
+            padding: 1.4em;
+            font-size: 14px;
+            box-shadow: 0 6px 3px rgba($color: $dark-blue, $alpha: .3);
+        }
+    }
+
+    &__free
+    {
+        color: #fff;
+        font-weight: map-get($font-weights, semi-bold);
+    }
+
+    &__form-group
+    {
+        background-color: #fff;
+        text-align: center;
+        padding: 1.2em;
+        border-radius: .6em;
+        box-shadow: 0 8px 2px rgba($color: $dark-blue, $alpha: .2);
+
+        @include responsive(desktop)
+        {
+            padding: 2em;
+        }
+    }
+
+    &__input
+    {
+        border: 1px solid rgba($color: $grayish-blue, $alpha: .5);
+        font-weight: map-get($font-weights, semi-bold);
+        font-size: 14px;
+        outline: none;
+        margin: .7em 0;
+        padding: 1em 0 1em 1em;
+        border-radius: .3em;
+        width: 90%;
+
+        @include responsive(desktop)
+        {
+            padding: 1em 0 1em 2em;
+        }
+
+        &::placeholder
+        {
+            color: rgba($color: $dark-blue, $alpha: .7);
+            font-weight: map-get($font-weights, bold);
+            font-size: 14px;
+        }
+
+        &:focus
+        {
+            border-color: $blue;
+        }
+    }
+
+    &__icon
+    {
+
+        position: absolute;
+        left: 75%; 
+        transform: translateY(-2.9em);
+        display: none;
+
+        @include responsive(tablet)
+        {
+            position: fixed;
+            left: 82%; 
+            transform: translateY(-2.9em);
+        }
+
+        @include responsive(desktop)
+        {
+            position: absolute;
+            transform: translate(-5.5em, -2.9em);
+        }
+
+    }
+
+    &__button
+    {
+        background-color: $green;
+        color: rgb(241, 241, 241);
+        font-size: 14.5px;
+        font-weight: map-get($font-weights, medium);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 1em;
+        padding: 1.2em;
+        width: 95%;
+        border: none;
+        border-radius: .5em;
+        box-shadow: 0px -4px 2px inset rgba($color: $dark-blue, $alpha: .2);
+        cursor: pointer;
+
+        @include responsive(desktop)
+        {
+            margin-top: 1em;
+            width: 97%;
+        }
+
+        &:hover
+        {
+            opacity: .7;
+        }
+    }
+
+    &__text
+    {
+        font-size: 11px;
+        color: $grayish-blue;
+        padding: 0 1.5em;
+        line-height: 1.8;
+        font-weight: map-get($font-weights, medium);
+    }
+
+    &__terms
+    {
+        color: $red;
+        font-weight: map-get($font-weights, bold);
+    }
+
+    .error
+    {
+        
+        color: $red;
+        font-size: 10px;
+        font-style: italic;
+        font-weight: map-get($font-weights, semi-bold);
+        position: absolute;
+        display: block;
+        right: 14%;
+        transform: translateY(-.5em);
+
+        @include responsive(desktop)
+        {
+            display: block;
+            position:absolute;
+            transform: translate(-7em, -.5em);
+        }
+    }
+
+    .error2
+    {
+        border: 2px solid $red;
+    }
+
+    .error3
+    {
+        display: block;
+    }
+    .error4::placeholder
+    {
+        color: $red;
+    }
+}
